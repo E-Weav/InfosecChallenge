@@ -4,7 +4,7 @@ After downloading the file from repository, make sure that the file location in 
 Before running the test, you will have to increment the value in the email (ex. tester1@gmail.com needs to be tester2@gmail.com)
 
 Besides for the setUp and tearDown which get executed for each test case, the others were chosen for a few reasons.  
-Test 1: Signin_nav.  This tests to make sure that clicking the sign in button actually brings a user to the new page so they can create and account or sign into an existing one.
+ <br />Test 1: Signin_nav.  This tests to make sure that clicking the sign in button actually brings a user to the new page so they can create and account or sign into an existing one.
 Test 2: Existing_account.  This was just to validate that a user would be able to sign into an account that already exists in the system.
 Test 3: Error_message.  This test was to validate that duplicate emails are not allowed to be used when creating a new account.
 Test 4: New_account.  The largest of the tests doesn't go into any specifics of fields, but rather just validates that a user can go top to bottom in the form to create a new account, hitting only the required fields.
