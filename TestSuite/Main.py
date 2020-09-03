@@ -31,6 +31,7 @@ class InfoSecLogin(unittest.TestCase):
         """Test to validate a user can be created"""
         self.driver.find_element_by_class_name("login").click()
         self.driver.implicitly_wait(10)
+        #The value in the email will need to be incremented before running.
         self.driver.find_element_by_id("email_create").send_keys("tester1@gmail.com")
         self.driver.find_element_by_id("SubmitCreate").click()
 
@@ -82,6 +83,7 @@ class InfoSecLogin(unittest.TestCase):
             #Returns error if the personal information box doesn't load in 10 seconds
 
     def test_existing_account(self):
+        """This tests to validate that you can sign into an existing account."""
         try:
             self.driver.find_element_by_class_name("login").click()
             self.driver.implicitly_wait(10)
